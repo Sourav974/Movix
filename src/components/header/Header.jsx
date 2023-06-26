@@ -52,13 +52,13 @@ const Header = () => {
   };
 
   const controlNavbar = () => {
-    // console.log(window.scrollY, "window scroll");
+    console.log(window.scrollY, "window scroll");
     if (window.scrollY > 200) {
       if (window.scrollY > lastScrollY && !mobileMenu) {
         setShow("hide");
       } else {
         setShow("show");
-        // console.log(lastScrollY, "last scrol");
+        console.log(lastScrollY, "last scrol");
       }
     } else {
       setShow("top");
