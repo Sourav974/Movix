@@ -1,6 +1,9 @@
 import React from "react";
+import ContentWrapper from "../../components/contentWrapper/ContentWrapper";
 import HeroBanner from "./heroBanner/HeroBanner";
+import Popular from "./popular/Popular";
 import "./styles.scss";
+import TopRated from "./topRated/TopRated";
 import Trending from "./trending/Trending";
 
 const Home = () => {
@@ -8,7 +11,8 @@ const Home = () => {
     <div className="homePage">
       <HeroBanner />
       <Trending />
-      <div style={{ height: 1000 }}></div>
+      <Popular />
+      <TopRated />
     </div>
   );
 };

@@ -24,6 +24,7 @@ const HeroBanner = () => {
 
   const searchQueryHandler = (event) => {
     if (event.key === "Enter" && query.length > 0) {
+      event.preventDefault();
       navigate(`/search/${query}`);
     }
   };
@@ -32,9 +33,7 @@ const HeroBanner = () => {
   return (
     <div className="heroBanner">
       <div className="backdrop-img">{!loading && <Img src={background} />}</div>
-      <div className="opacity-layer">
-        
-      </div>
+      <div className="opacity-layer"></div>
       <ContentWrapper>
         <div className="heroBannerContent">
           <span className="title">Welcome.</span>
